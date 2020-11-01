@@ -129,7 +129,7 @@ void bubblesort(int a[],int ch,int start ,int end){
     }
 }
 
-void process3(int arr[],int n,int key1,int key2){
+void binarySearch(int arr[],int n,int key1,int key2){
     clock_t t1,t2;
     pthread_t pth[4];
     struct node *temp=(struct node* )malloc(4*sizeof(struct node));
@@ -175,7 +175,7 @@ void process3(int arr[],int n,int key1,int key2){
     }
 
 }
-void process4(int arr[],int n,int key1,int key2){
+void Fibonacci(int arr[],int n,int key1,int key2){
     clock_t t1,t2;
     pthread_t pth[4];
 
@@ -248,8 +248,8 @@ int main(int argc,char* argv[])
     for(int i=0;i<n;i++)
         printf("%d ",arr[i]);
     printf("\n");
-	process3(arr,n,key1,key2);
-	process4(arr,n,key1,key2);
+	binarySearch(arr,n,key1,key2);
+	Fibonacci(arr,n,key1,key2);
 
     return 0;
 }
